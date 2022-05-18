@@ -6,6 +6,7 @@ NodeJs features with practical codes
 ###### note: add (.gitignore) file to avoid cp of dependencies to repository
 
 ```
+git init //to create git environment for that folder
 git branch -c share_npm	//create new share_npm branch
 git branch  //show branches with active status
 git checkout share_npm //swithch to share_npm from main
