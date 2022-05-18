@@ -6,6 +6,13 @@ NodeJs features with practical codes
 ###### note: add (.gitignore) file to avoid cp of dependencies to repository
 
 ```
+git branch -c share_npm	//create new share_npm branch
+git branch  //show branches with active status
+git checkout share_npm //swithch to share_npm from main
+```
+
+
+```
   These are common Git commands used in various situations:
   
   start a working area (see also: git help tutorial)
