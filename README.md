@@ -17,7 +17,7 @@ git clone "https://github.com/Abhyu08/NodeJs" //will get the master branch of th
 
 git remote -v
 git remote add origin "https://github.com/Abhyu08/NodeJs" //if no remote's present for the same
-git clone --branch share-npm "https://github.com/Abhyu08/NodeJs"  //git clone branch repo instead of master repo
+git clone --branch share-npm "https://github.com/Abhyu08/NodeJs" //git clone branch repo instead of master repo
 
 ```
 
