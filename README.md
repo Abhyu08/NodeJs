@@ -13,11 +13,11 @@ git checkout share_npm //swithch to share_npm from main
 git push origin head //head points to current pointing branch
 
 //To get from Repository
-git clone "https://github.com/Abhyu08/NodeJs" //will get the master branch of that repository
+git clone "https://github.com/Abhyu08/NodeJs/" //will get the master branch of that repository
 
 git remote -v
-git remote add origin "https://github.com/Abhyu08/NodeJs" //if no remote's present for the same
-git clone --branch share-npm "https://github.com/Abhyu08/NodeJs" //git clone branch repo instead of master repo
+git remote add origin "https://github.com/Abhyu08/NodeJs/" //if no remote's present for the same
+git clone --branch share-npm "https://github.com/Abhyu08/NodeJs/" //git clone branch repo instead of master repo
 
 ```
 
