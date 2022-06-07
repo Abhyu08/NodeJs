@@ -33,33 +33,27 @@ app.get('/api/products/1', (req, res) => {
 });
 */
 
-//1.routers parameters..
+//1.queryStrings...
 
-//to get specificProducts //Implementaion to avoid doing for all existing products seperately : 
-//can implement generalized code using routers parameters..
-app.get('/api/products/:productID', (req, res) => {
-    //request object gives value to productID field
+app.get('/api/products/query', (req, res) => {
+    console.log(req.query);
+    let sortedJson = [...products];
+    const { search, limit } = req.query;
 
-    console.log(req.params.productID);
-    // url : 'localhost:5000/api/products/22' --> assigned 22 -> productID
-    const limitedProduct = products.map((product) => {
-        const { id, name, price } = product;
-        return { id, name, price };
-    });
+    if (search) {
+        sortedJson = sortedJson.filter((data) => {
+            return data.name.startsWith(search);
+        })
+    }
+    if (limit) {
+        sortedJson = sortedJson.slice(0, Number(limit));
+    }
 
-    const singleProduct = limitedProduct.find((product) => product.id == req.params.productID);
-    if (!singleProduct)
-        res.status(404).send(`Resource Not Found!`);
-    else res.json(singleProduct);
-
+    if (sortedJson.length > 0)
+        return res.status(200).json(sortedJson);
+    else return res.status(200).json({ success: true, data: [] });
 
 });
-
-app.get('/api/products/:productID/reviews/:userId/comments/', (req, res) => {
-    console.log(req.params);
-    res.json('Heloow');
-});
-
 
 
 app.listen(5000, () => {
