@@ -7,6 +7,13 @@ NodeJs features with practical codes
 ###### note: add (.gitignore) file to avoid cp of dependencies to repository
 
 ```
+###### Login in ur acc in GITBASH
+git config --global user.name "Abhyu08"
+git config --global user.email "ghatale.abhyuday@gmail.com"
+git config --global user.password "password"
+git config --global credential.helper store
+git config --list --show-origin
+
 git init //to create git environment for that folder
 git branch -c share_npm	//create new share_npm branch
 git branch  //show branches with active status
