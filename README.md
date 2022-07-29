@@ -9,7 +9,7 @@ NodeJs features with practical codes
 ```
 ###### Login in ur acc in GITBASH
 git config --global user.name "Abhyu08"
-git config --global user.email "ghatale.abhyuday@gmail.com"
+git config --global user.email "emailD@gmail.com"
 git config --global user.password "password"
 git config --global credential.helper store
 git config --list --show-origin
