@@ -28,6 +28,14 @@ git remote add origin "https://github.com/Abhyu08/NodeJs" //if no remote's prese
 git remote set-url origin "https://github.com/Abhyu08/NodeJs"  //if we want to change origin remote url
 git clone --branch share-npm "https://github.com/Abhyu08/NodeJs" //git clone branch repo instead of master repo
 
+//How to Clone a Specific Branch
+git clone --branch <branchname> <remote-repo-url>
+OR
+git clone -b <branchname> <remote-repo-url>
+
+//To push local commit to Specific Branch Remote
+git push origin <remote branch name>
+
 ```
 Top Git Commands : 
 ```
